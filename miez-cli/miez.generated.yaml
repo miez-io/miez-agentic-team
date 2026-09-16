@@ -20,6 +20,7 @@ workers:
     - id: software-architect
       kind: agent
       path: workers/software-architect.md
+      description: Pragmatic software architect who turns ambiguity into clear requirements, visible reasoning, focused designs, and evolvable systems.
       model: gpt-5.6-luna
       skills:
         - write-srs
