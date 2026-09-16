@@ -1,6 +1,5 @@
 ---
 name: write-srs
-id: write-srs
 description: Write a software requirements specification (SRS) using ISO/IEC/IEEE 29148 and EARS shall-lines. Use when defining, changing, reviewing, or inventorying what a capability must do, or when asked to write requirements, an SRS, or EARS statements.
 license: MIT
 compatibility: GitHub Copilot and other Agent Skills clients

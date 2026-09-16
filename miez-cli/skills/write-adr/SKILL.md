@@ -1,6 +1,5 @@
 ---
 name: write-adr
-id: write-adr
 description: Write an architecture decision record using MADR 4 and Nygard ADR when a real technical choice has alternatives. Use when recording why one option won, or when asked to write an ADR or MADR.
 license: MIT
 compatibility: GitHub Copilot and other Agent Skills clients

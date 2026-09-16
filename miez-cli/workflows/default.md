@@ -1,9 +1,8 @@
 ---
-id: default
 name: Default
 phases:
   - id: work
-    workers: [starter]
+    workers: [software-architect]
 ---
 # Default workflow
 
