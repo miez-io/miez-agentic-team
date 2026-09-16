@@ -16,6 +16,10 @@ skills:
       path: skills/write-sdd/SKILL.md
     - id: write-srs
       path: skills/write-srs/SKILL.md
+tasks:
+    - id: analyze-existing-solution
+      path: tasks/analyze-existing-solution.md
+      description: Analyze an existing solution and document its requirements.
 workers:
     - id: software-architect
       kind: agent

@@ -15,7 +15,7 @@ assignments.
 - A skill describes a repeatable capability and contains no worker persona.
 - A worker does not contain workflow phases, handoff sequencing, or a
   `Collaboration` section.
-- `kind: command` versus `kind: agent` is frontmatter configuration.
+- `kind: agent` is the only supported worker frontmatter value.
 
 ## Procedure
 
@@ -24,7 +24,7 @@ assignments.
    the file name is the worker id.
 3. Add frontmatter with `kind` and optional `skills`, `model`, and
    `tools`. Use only `command` or `agent` for `kind`.
-4. Set `model` only when `kind: agent`.
+4. Set `model` on the agent worker when it needs to override the team default.
 5. Write the persona and extract specialized procedures into reusable skills.
 6. Assign existing skills explicitly; do not paste their bodies into the
    worker.

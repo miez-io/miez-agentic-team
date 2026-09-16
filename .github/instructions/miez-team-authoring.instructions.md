@@ -9,7 +9,7 @@ valid and keep operational artifacts separate from Copilot authoring support.
 
 ## Source and generated files
 
-- Treat `miez.yaml`, `workers/`, `skills/`, and `workflows/` as authored source.
+- Treat `miez.yaml`, `workers/`, `skills/`, `tasks/`, and `workflows/` as authored source.
 - Treat `miez.generated.yaml` as generated output. Never edit it manually.
 - Run `miez team build .` after changing package metadata or artifact
   frontmatter.
@@ -21,8 +21,8 @@ valid and keep operational artifacts separate from Copilot authoring support.
 
 - A worker owns durable identity, motivation, goals, beliefs, judgment, and
   boundaries.
-- `kind` is either `command` or `agent`.
-- Only `kind: agent` may declare `model`.
+- Every worker uses `kind: agent` and renders as a Copilot custom agent.
+- `kind: command` is not supported.
 - Put repeatable procedures, checklists, and technology-specific methods in a
   reusable skill instead of a worker persona.
 - Do not put workflow phases, handoff order, or a `Collaboration` section in a

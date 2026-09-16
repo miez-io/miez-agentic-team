@@ -1,15 +1,14 @@
 ---
 name: create-worker
-description: Create or revise one miez worker with valid frontmatter and a durable persona.
+description: Create or revise one miez agent worker with valid frontmatter and a durable persona.
 agent: Team Facilitator
-argument-hint: Describe the worker's role, responsibility, and whether it is a command or agent.
+argument-hint: Describe the worker's role, responsibility, and assigned skills.
 ---
 
 Create or revise exactly one miez worker in `workers/<worker-id>.md`.
 
 Before editing, inspect the existing package, the always-on authoring rules, and
-the worker template. Use a lowercase kebab-case id and choose exactly one
-frontmatter kind: `command` or `agent`. Add `model` only for an agent. Assign
+the worker template. Use a lowercase kebab-case id and `kind: agent`. Assign
 existing reusable skills instead of copying their bodies into the worker.
 
 Write a persona with identity, motivation, core goals, beliefs, judgment, and
