@@ -6,7 +6,7 @@ description: Describe this team.
 author: Manuel
 models:
     - id: gpt-5.6-luna
-      copilot: GPT-5.6-Luna (copilot)
+      copilot: GPT-5.6 Luna (copilot)
 skills:
     - id: write-adr
       path: skills/write-adr/SKILL.md
