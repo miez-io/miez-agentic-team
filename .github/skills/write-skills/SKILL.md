@@ -20,8 +20,8 @@ miez workers.
 1. Identify the reusable capability and the situations where it applies.
 2. Choose a lowercase kebab-case id and create
    `skills/<skill-id>/SKILL.md`.
-3. Add frontmatter with the matching `id`; optional `name` and `description`
-   fields may clarify the skill.
+3. The directory name is the skill id — do not declare `id` in frontmatter;
+   optional `name` and `description` fields may clarify the skill.
 4. Describe the purpose, method, guardrails, and expected output.
 5. Assign the skill in worker frontmatter only where it is relevant.
 6. Run `miez team build .` and inspect the generated catalog.

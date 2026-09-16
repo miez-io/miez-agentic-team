@@ -12,9 +12,10 @@ team index. It is read-only and reports the smallest repair for each finding.
 
 1. Read `miez.yaml` and `miez.generated.yaml`; collect worker, skill, model,
    and workflow ids.
-2. Confirm every generated worker path exists and its frontmatter id matches.
-3. Confirm every assigned skill exists at `skills/<skill-id>/SKILL.md` and its
-   frontmatter id matches the directory and assignment.
+2. Confirm every generated worker path exists and its file name matches the
+   generated id.
+3. Confirm every assigned skill exists at `skills/<skill-id>/SKILL.md`; the
+   directory name is the id, and no `id` frontmatter field exists.
 4. Confirm worker, skill, workflow, phase, and model ids are unique and valid.
 5. Confirm every workflow phase references an existing worker.
 6. Inspect workers for workflow phases, handoff choreography, or a

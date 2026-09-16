@@ -20,8 +20,9 @@ assignments.
 ## Procedure
 
 1. Identify the worker's durable role, motivation, judgment, and scope.
-2. Choose a lowercase kebab-case id and create `workers/<worker-id>.md`.
-3. Add frontmatter with `id`, `kind`, and optional `skills`, `model`, and
+2. Choose a lowercase kebab-case id and create `workers/<worker-id>.md` —
+   the file name is the worker id.
+3. Add frontmatter with `kind` and optional `skills`, `model`, and
    `tools`. Use only `command` or `agent` for `kind`.
 4. Set `model` only when `kind: agent`.
 5. Write the persona and extract specialized procedures into reusable skills.

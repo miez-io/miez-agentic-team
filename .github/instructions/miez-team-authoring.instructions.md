@@ -31,7 +31,8 @@ valid and keep operational artifacts separate from Copilot authoring support.
 ## Skill boundary
 
 - A skill is reusable and independent of a worker's personality.
-- Store it at `skills/<skill-id>/SKILL.md` with matching `id` frontmatter.
+- Store it at `skills/<skill-id>/SKILL.md`; the directory name is its id —
+  never declare `id` in frontmatter.
 - Describe purpose, method, guardrails, and output.
 - Do not put worker persona or workflow choreography in a skill.
 

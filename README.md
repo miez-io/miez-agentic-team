@@ -31,7 +31,8 @@ and is not added to `miez.generated.yaml`.
 
 ## Workers
 
-Every worker needs an `id` and a `kind`. The only valid kinds are:
+Every worker needs a `kind`. The worker id is the file name:
+`workers/architect.md` becomes `architect`. The only valid kinds are:
 
 - `command`: a manually invoked Copilot prompt.
 - `agent`: a persistent Copilot custom agent.
@@ -48,7 +49,6 @@ Example:
 
 ```markdown
 ---
-id: architect
 kind: agent
 model: gpt-5
 skills: [architecture]
@@ -60,11 +60,13 @@ Describe the worker's durable persona and decision posture.
 
 ## Skills and workflows
 
-A skill is reusable and independent of a worker persona. Its frontmatter needs
-an `id` matching its directory name. Assign it from worker frontmatter or with
+A skill is reusable and independent of a worker persona. Its id is its
+directory name (`skills/<skill-id>/SKILL.md`); do not declare `id` in
+frontmatter. Assign it from worker frontmatter or with
 the local `miez worker skill add` command after installation.
 
-A workflow frontmatter declares `id`, `name`, and ordered `phases`. Every phase
+A workflow's id is its file name; its frontmatter declares `name` and ordered
+`phases`. Every phase
 lists existing worker ids. Workflow membership belongs only in the workflow;
 do not put routing or handoff choreography in a worker or skill.
 
