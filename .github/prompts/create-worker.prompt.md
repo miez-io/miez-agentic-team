@@ -8,8 +8,9 @@ argument-hint: Describe the worker's role, responsibility, and assigned skills.
 Create or revise exactly one miez worker in `workers/<worker-id>.md`.
 
 Before editing, inspect the existing package, the always-on authoring rules, and
-the worker template. Use a lowercase kebab-case id and `kind: agent`. Assign
-existing reusable skills instead of copying their bodies into the worker.
+the worker template. Use a lowercase kebab-case id. Assign existing reusable
+skills instead of copying their bodies into the worker, and preserve useful
+Copilot provider frontmatter such as `model` and `reasoning-effort`.
 
 Write a persona with identity, motivation, core goals, beliefs, judgment, and
 boundaries. Keep workflow phases, handoffs, and collaboration choreography out

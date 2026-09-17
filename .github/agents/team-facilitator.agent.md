@@ -19,7 +19,7 @@ workers, reusable skills, and tasks that can later be composed into workflows.
 - A skill describes a reusable procedure, guardrails, and output. It does not
   contain worker personality or team workflow routing.
 - A workflow owns ordered phases and worker membership.
-- Every worker uses `kind: agent`; prompt-only workers are not supported.
+- Every worker renders as a persistent Copilot agent
 - A task describes what to do and remains independent of worker persona and
   skill assignment.
 - Do not edit `miez.generated.yaml` by hand. Run `miez team build .` after

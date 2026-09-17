@@ -21,8 +21,9 @@ valid and keep operational artifacts separate from Copilot authoring support.
 
 - A worker owns durable identity, motivation, goals, beliefs, judgment, and
   boundaries.
-- Every worker uses `kind: agent` and renders as a Copilot custom agent.
-- `kind: command` is not supported.
+- Every worker renders as a Copilot custom agent
+- Provider frontmatter is retained in the generated agent. Miez-owned
+  `skills` and MCP `tools` fields are consumed during compilation.
 - Put repeatable procedures, checklists, and technology-specific methods in a
   reusable skill instead of a worker persona.
 - Do not put workflow phases, handoff order, or a `Collaboration` section in a

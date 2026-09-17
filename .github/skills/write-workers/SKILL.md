@@ -15,15 +15,17 @@ assignments.
 - A skill describes a repeatable capability and contains no worker persona.
 - A worker does not contain workflow phases, handoff sequencing, or a
   `Collaboration` section.
-- `kind: agent` is the only supported worker frontmatter value.
+- Workers always render as Copilot agents
+- Preserve provider frontmatter and use `skills` and MCP `tools` only for miez
+   configuration.
 
 ## Procedure
 
 1. Identify the worker's durable role, motivation, judgment, and scope.
 2. Choose a lowercase kebab-case id and create `workers/<worker-id>.md` —
    the file name is the worker id.
-3. Add frontmatter with `kind` and optional `skills`, `model`, and
-   `tools`. Use only `command` or `agent` for `kind`.
+3. Add optional miez fields such as `skills` and `tools`, plus provider fields
+   such as `model` and `reasoning-effort` when needed.
 4. Set `model` on the agent worker when it needs to override the team default.
 5. Write the persona and extract specialized procedures into reusable skills.
 6. Assign existing skills explicitly; do not paste their bodies into the

@@ -55,8 +55,7 @@ and is not added to `miez.generated.yaml`.
 ## Workers
 
 Every worker renders as a persistent GitHub Copilot custom agent. The worker id
-is the file name: `workers/architect.md` becomes `architect`. `kind: agent` is
-required; `kind: command` is not supported.
+is the file name: `workers/architect.md` becomes `architect`.
 
 A worker can assign reusable skills with `skills: [skill-id]` and may reference
 declared MCP servers with `tools: [mcp-id]`. Model selection applies to every
@@ -70,7 +69,6 @@ Example:
 
 ```markdown
 ---
-kind: agent
 skills: [architecture]
 model: gpt-5
 ---

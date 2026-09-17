@@ -1,10 +1,4 @@
 {
-  "Miez worker kind": {
-    "scope": "chatagent",
-    "prefix": "kind",
-    "body": "kind: agent",
-    "description": "Declare a miez worker as a persistent agent."
-  },
   "Miez worker skills": {
     "scope": "chatagent",
     "prefix": "skills",
