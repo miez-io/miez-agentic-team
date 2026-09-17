@@ -1,0 +1,30 @@
+{
+  "Miez worker kind": {
+    "scope": "chatagent",
+    "prefix": "kind",
+    "body": "kind: agent",
+    "description": "Declare a miez worker as a persistent agent."
+  },
+  "Miez worker skills": {
+    "scope": "chatagent",
+    "prefix": "skills",
+    "body": "skills: [${1:skill-id}]",
+    "description": "Assign reusable miez skills to this worker."
+  },
+  "Miez worker MCP tools": {
+    "scope": "chatagent",
+    "prefix": "miez-tools",
+    "body": "tools: [${1:mcp-id}]",
+    "description": "Reference MCP server ids declared in miez.yaml."
+  },
+  "Miez workflow phases": {
+    "scope": "instructions",
+    "prefix": "phases",
+    "body": [
+      "phases:",
+      "  - id: ${1:phase-id}",
+      "    workers: [${2:worker-id}]"
+    ],
+    "description": "Declare ordered miez workflow phases."
+  }
+}
