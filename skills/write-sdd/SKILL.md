@@ -54,3 +54,4 @@ structure. The SRS is enough.
 - Document the whole product
 - Choose among alternatives here (`write-adr`)
 - Specify function-level code or file-by-file edits
+- Document historical context, changes, features, and decisions. Always only contain the current state.

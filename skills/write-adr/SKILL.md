@@ -50,3 +50,4 @@ Skip when there is no fork. Schema fields and query shape are design
 - Write an ADR for work that had no alternative
 - Repeat the SDD
 - Invent requirements
+- Copy historical alternatives or removed behavior into current-state documents; keep that context brief in the ADR.

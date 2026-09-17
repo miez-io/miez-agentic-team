@@ -66,3 +66,4 @@ traceable. Full list in the reference.
 - Put several needs in one sentence
 - Store user stories as a second requirements list
 - Write architecture or design in this file
+- Document historical context, changes, features, and decisions. Always only contain the current state.

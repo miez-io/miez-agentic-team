@@ -46,9 +46,10 @@ Skip when the change stays inside an existing container. That is an SDD
 Who uses the system. Which containers exist. Where they run. System-wide
 quality goals. An index of decision records (section 9).
 
-## What does not
+## What does not belong here
 
-Schema, queries, indexes, module folders, class lists, algorithm steps.
+- Schema, queries, indexes, module folders, class lists, algorithm steps.
+- Historical documentation like context, past changes, features, and decisions. Always only contain the current state.; record historical context only in a brief ADR.
 
 ## Procedure
 
