@@ -1,7 +1,6 @@
 ---
 name: create-skill
 description: Create or revise one reusable miez skill with valid frontmatter and clear procedures.
-agent: Team Facilitator
 argument-hint: Describe the repeatable capability, guardrails, and expected output.
 ---
 

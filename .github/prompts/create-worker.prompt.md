@@ -1,7 +1,6 @@
 ---
 name: create-worker
 description: Create or revise one miez agent worker with valid frontmatter and a durable persona.
-agent: Team Facilitator
 argument-hint: Describe the worker's role, responsibility, and assigned skills.
 ---
 
