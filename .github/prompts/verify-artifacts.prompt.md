@@ -1,19 +1,28 @@
 ---
 name: verify-artifacts
-description: Verify miez artifacts against their domain boundaries and suggest improvements.
+description: Verify miez artifacts against their domain boundaries and suggest improvements, if necessary.
 argument-hint: Review the team's workers, skills, tasks, and workflows.
 ---
 
-Verify miez artifacts (workflows, workers, skills, tasks) to make sure they fit the miez domain standard. Suggest improvements if they do not.
+Verify miez artifacts to make sure they fit the miez domain standard. Suggest improvements if they do not.
 
-# Miez Domain Test
+Review these package directories:
 
-For each, you can ask the following questions:
+- `workers/`
+- `skills/`
+- `tasks/`
+- `workflows/`
 
-- A worker: "who I am and what I can do". It represents a persona that can perform tasks using skills.
+Use the [Miez artifact authoring instruction](../instructions/miez-artifact-authoring.instructions.md)
+as the source of truth for each artifact's domain boundary.
 
-- A skill: "how I should do something". It describes a repeatable and generic skill, that different workers (personas) can apply.
+For each artifact:
 
-- A task: "what needs to be done". It represents a single actionable step that can be performed by a worker using a skills.
+- Check its boundary, frontmatter, references, and scope.
+- Identify violations, overlap, and inconsistencies.
+- Suggest the smallest useful improvement, including the artifact path and
+	reason, only if necessary.
+- Report "No issue" when it passes review.
 
-- A workflow: "what I do and in which order". It represents a sequence of tasks, split accross multiple workers.
+Do not edit artifacts during verification unless the user explicitly asks for
+the suggested improvements to be applied.
