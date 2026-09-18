@@ -1,11 +1,8 @@
 ---
 name: write-arc42
 description: Write or patch a system architecture description using the arc42 template and C4 context, container, and deployment views. Use when documenting system shape, or when a process, database, or external system is added, removed, or moved.
-license: MIT
-compatibility: GitHub Copilot and other Agent Skills clients
-metadata:
-  version: "1.0"
-  standards: ISO/IEC/IEEE 42010, arc42, C4
+user-invocable: true
+disable-model-invocation: false
 ---
 
 # Write arc42

@@ -1,11 +1,8 @@
 ---
 name: write-user-story
 description: Write a user story that serves a human on the board, QA including Playwright, and a coding agent from one artifact. Use when turning SRS or SDD content into tickets, slicing a feature into stories, or when asked to write or review a user story, backlog item, or acceptance criteria.
-license: MIT
-compatibility: GitHub Copilot and other Agent Skills clients
-metadata:
-  version: "1.0"
-  standards: ISO/IEC/IEEE 29148, EARS
+user-invocable: true
+disable-model-invocation: false
 ---
 
 # Write a user story
