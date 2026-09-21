@@ -20,21 +20,16 @@ tasks:
     - id: analyze-existing-solution
       path: tasks/analyze-existing-solution.md
       description: Analyze an existing solution and document its requirements.
+    - id: change-request
+      path: tasks/change-request.md
+      description: The user requests one or more changes to an existing or planned solution.
 workers:
     - id: software-architect
-      kind: agent
       path: workers/software-architect.md
       description: Pragmatic software architect who turns ambiguity into clear requirements, visible reasoning, focused designs, and evolvable systems.
-      model: gpt-5.6-luna
+      model: GPT-5.6 Luna (copilot)
       skills:
         - write-srs
         - write-sdd
         - write-arc42
-workflows:
-    - id: default
-      name: Default
-      path: workflows/default.md
-      phases:
-        - id: work
-          workers:
-            - software-architect
+workflows: []
